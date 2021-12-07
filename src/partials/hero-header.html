@@ -1,0 +1,213 @@
+<div class="header-hero">
+  <div class="header-hero__container">
+    <section class="header">
+      <h2 class="header--invisible">header</h2>
+      <!-- nav block -->
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li>
+            <a href="./index.html" title="IceCream main page"
+              ><img
+                srcset="./images/hero/logo.png 1x, ./images/hero/logo@2x.png 2x"
+                src="./images/hero/logo.png"
+                class="header__logo"
+                alt="Logo IceCream"
+            /></a>
+          </li>
+
+          <li>
+            <ul class="header__desktop-menu">
+              <li><a href="./index.html" class="header__link">Home</a></li>
+              <li><a href="#customer-reviews" class="header__link">About us</a></li>
+              <li><a href="#how" class="header__link">How it’s made?</a></li>
+              <li><a href="#product" class="header__link">Our products</a></li>
+              <li><a href="#contact" class="header__link">Contact</a></li>
+            </ul>
+          </li>
+          <li>
+            <button type="button" class="header__button header__button--invisible">Buy now</button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="hero">
+      <!-- hero H1 title -->
+      <h1 class="hero__title">ice cream made with <span class="hero__title--red">passion</span></h1>
+
+      <!-- links products & how its made -->
+      <ul class="hero__link-list">
+        <li class="hero__link-item">
+          <a href="#product" class="hero__link hero__link--products" title="Products">Products</a>
+        </li>
+        <li class="hero__button-item">
+          <a href="#how" class="hero__link hero__link--howmade" title="How it’s made?"
+            >How it’s made?</a
+          >
+        </li>
+      </ul>
+
+      <!-- statistic digits -->
+      <ul class="hero__statistic-list hero__statistic-list--invisible">
+        <li class="hero__statistic-item">
+          16
+          <p class="hero__statistic-category hero__statistic-category--right">cafes</p>
+        </li>
+        <li class="hero__statistic-item">
+          23
+          <p class="hero__statistic-category">food trucks</p>
+        </li>
+        <li>
+          <!-- fixed team button -->
+          <button type="button" class="header__team" data-modal-open>Team</button>
+        </li>
+      </ul>
+
+      <!-- hero text block -->
+      <a href="" title="Lorem ipsum dolor sit amet">
+        <p class="hero__text-block hero__text-block--invisible">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+      </a>
+
+      <!-- icecream with ellipse-->
+      <div class="hero__ellipse"></div>
+      <picture>
+        <source
+          srcset="images/hero/icecream-desk.png 236w, images/hero/icecream-desk@2x.png 472w"
+          sizes="236px"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="images/hero/icecream-tab.png 143w, images/hero/icecream-tab@2x.png 286w"
+          sizes="143px"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="images/hero/icecream.png 171w, images/hero/icecream@2x.png 342w"
+          sizes="171px"
+          media="(min-width:480px)"
+        />
+        <img
+          src="images/hero/icecream.png"
+          class="hero__image hero__image--icecream"
+          alt="icecream"
+        />
+      </picture>
+      <!-- milk image -->
+
+      <picture>
+        <source
+          srcset="images/hero/milk-desk.png 1x, images/hero/milk-desk@2x.png 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="images/hero/milk-tab.png 1x, images/hero/milk-tab@2x.png 2x"
+          media="(min-width:768px)"
+        />
+
+        <img src="images/hero/milk-tab.png" class="hero__image hero__image--milk" alt="bio eco" />
+      </picture>
+
+      <!-- girl image -->
+      <picture>
+        <source
+          srcset="images/hero/girl-desk.png 1x, images/hero/girl-desk@2x.png 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="images/hero/girl-tab.png 1x, images/hero/girl-tab@2x.png 2x"
+          media="(min-width:768px)"
+        />
+
+        <img
+          src="images/hero/girl-tab.png"
+          class="hero__image hero__image--girl"
+          alt="girl with icecream"
+        />
+      </picture>
+
+      <!-- mobile menu button-->
+      <button
+        class="menu-toggle js-open-menu header__menu-button header__menu-button--invisible"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      ></button>
+    </section>
+  </div>
+</div>
+
+<!-- Mobile menu -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu menu-close__button">
+    <svg class="header-nav__icon">
+      <use href="./images/hero/icons.svg#cross"></use>
+    </svg>
+  </button>
+  <nav>
+    <ul class="header-nav__list">
+      <li class="header-nav__item header-nav__item--center">
+        <button type="button" class="header__button header__button--static">Buy now</button>
+      </li>
+      <li class="header-nav__item">
+        <a href="./index.html" class="header-nav__link">Home</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#customer-reviews" class="header-nav__link">About us</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#how" class="header-nav__link">How it’s made?</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#product" class="header-nav__link">Our products</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="#contact" class="header-nav__link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- modal window -->
+
+<!-- Модальное окно-->
+<div class="backdrop backdrop--hidden" data-modal>
+  <div class="modal">
+    <div class="modal__content">
+      <button type="button" class="modal__button--close" data-modal-close>
+        <svg class="modal__icon--close">
+          <use href="./images/hero/icons.svg#cross"></use>
+        </svg>
+      </button>
+    </div>
+    <h2 class="modal__title">Roles in the team <br />Wind of change:</h2>
+    <ul>
+      <li class="cast__category">Team Lead:</li>
+      <li class="cast__item">Vadym Hryshchuk</li>
+      <li class="cast__category">Scrum Master:</li>
+      <li class="cast__item">Yarina Loboda</li>
+      <li class="cast__category">Developers:</li>
+      <li class="cast__item">Yurii Kuzhil</li>
+      <li class="cast__item">Danylo Mashmaniuk</li>
+      <li class="cast__item">Svitlana Zhovanik</li>
+      <li class="cast__item">Vladislav Derkach</li>
+      <li>
+        <audio controls src="./media/song.mp3">
+          Your browser does not support the
+          <code>audio</code> element.
+        </audio>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- JS -->
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="js/mobile-menu.js"></script>
+<script defer src="js/modal.js"></script>

@@ -1,0 +1,13 @@
+.gallery {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 59%, rgba(255, 245, 246, 1) 60%);
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: $tablet-size) {
+    margin-bottom: 121px;
+  }
+  @media screen and (min-width: $desktop-size) {
+    margin-bottom: 123px;
+  }
+}

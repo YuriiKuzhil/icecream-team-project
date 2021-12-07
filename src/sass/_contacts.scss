@@ -1,0 +1,262 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  margin: 0;
+}
+.contact{
+  background: 
+    linear-gradient(
+      to bottom,
+      white 15%,
+      #FFF5F6 15%,
+     
+    
+    )
+
+  
+}
+@media screen and (min-width: 1280px){
+  .contact{
+    
+    background-image: url(../images/footer/sectionbg2.png),
+    linear-gradient(
+      to bottom,
+      white 15%,
+      #FFF5F6 15%);
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+  }
+}
+.container-contact {
+  background-color: #ffffff;
+  
+  padding: 43px 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-top: 20px;
+
+ 
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 20px;
+    margin-left: 0;
+    padding-left: 31px;
+    padding-right: 45px;
+    width: 220px;
+  }
+  @media screen and (min-width: 1280px){
+width:330px;
+padding-left: 43px;
+padding-right: 44px;
+margin-left: 0;
+margin-right: 30px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1270px) {
+  .container-contact:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.name-institution {
+  width: 80px;
+  background-color: #f0d1a5;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  
+}
+.container-city {
+  display: flex;
+  flex-direction: column;
+}
+.container-city::after {
+  content: '';
+  max-width: 92%;
+
+  border: 1px solid #e1e1e1;
+  margin-top: 25px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 157px;
+  }
+}
+.name-h3 {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.span-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+  padding-top: 10px;
+}
+
+.schedule-work {
+  margin-top: 50px;
+
+  &__list:last-child {
+    padding-top: 10px;
+  }
+
+  &__time {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #ffa5ba;
+  }
+}
+
+.schedule-work::after {
+  content: '';
+  max-width: 92%;
+  display: flex;
+  border: 1px solid #e1e1e1;
+  margin-top: 25px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 157px;
+  }
+}
+
+.container-navigation {
+  margin-top: 50px;
+
+  &__list {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #907e82;
+  }
+}
+
+.foodtruck {
+  width: 130px;
+  background-color: #c2e297;
+  padding: 0 15px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+// ! Кнопка
+
+.button-contact {
+  margin: 0 auto;
+  margin-top: 54px;
+  padding: 10px 0;
+  width: 161px;
+  border: none;
+  border-radius: 25px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &::after {
+    content: '';
+    width: 8px;
+    height: 10px;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+  }
+}
+
+.our-location {
+  background-color: $accent-text-color;
+  border-color: $accent-text-color;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
+  &::after {
+    content: '';
+    background-image: url(../images/contackt-img/galo4ka-white.png);
+  }
+  &:hover{
+  background-color: $button-hover-bgc-color;
+  transform: scale(1.1);
+  transition-duration: 250ms;
+}
+}
+.Franchise {
+ 
+  margin-top: 8px;
+  background-color: #ffffff;
+  border-color: $accent-text-color;
+  color: $accent-text-color;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  &::after {
+    content: '';
+    background-image: url(../images/contackt-img/galo4ka-red.png);
+  }
+  &:hover{
+    background-color: #ECEBEB;
+    transform: scale(1.1);
+    transition-duration: 250ms;
+  
+  }
+}
+
+
+.tablet-desktop {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1280px){
+    
+    
+
+  }
+}
+.tablet-desktop-buton {
+  @media screen and (min-width: 768px) {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+}
